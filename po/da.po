@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: zypper\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-27 11:53+0200\n"
-"PO-Revision-Date: 2026-08-05 15:13+0000\n"
+"PO-Revision-Date: 2026-09-14 17:13+0000\n"
 "Last-Translator: Peter Andreasen <noesgaard@gmail.com>\n"
-"Language-Team: Danish <https://l10n.opensuse.org/projects/zypper/master/da/"
-">\n"
+"Language-Team: Danish <https://l10n.opensuse.org/projects/zypper/master/da/>"
+"\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.8\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: src/Command.cc:93
 msgid "Invalid command"
@@ -237,7 +237,7 @@ msgstr "Brug alternativ mappe til definitionsfiler til softwarekilder."
 #. translators: --servicesd-dir <DIR>
 #: src/Config.cc:401
 msgid "Use alternative services definition file directory."
-msgstr ""
+msgstr "Anvend en alternativ mappe til service-definitioner."
 
 #. translators: --cache-dir, -C <DIR>
 #: src/Config.cc:416
@@ -4656,7 +4656,7 @@ msgstr "Konfiguration"
 
 #: src/commands/services/list.cc:137
 msgid "services (ls) [OPTIONS] [SERVICE] ..."
-msgstr ""
+msgstr "services (ls) [TILVALG] [SERVICE] ..."
 
 #: src/commands/services/list.cc:138
 msgid "List all defined services."
@@ -5046,7 +5046,7 @@ msgstr "Afinstallation af kildepakker understøttes ikke."
 #: src/commands/subcommand.cc:88
 #, boost-format
 msgid "No manual entry for %1%"
-msgstr ""
+msgstr "Ingen manualtekst for %1%"
 
 #: src/commands/subcommand.cc:103
 msgid "none"
@@ -5156,6 +5156,8 @@ msgid ""
 "Using zypper subcommands available from elsewhere on your $PATH is disabled "
 "in zypper.conf."
 msgstr ""
+"Brug af zypper-underkommandoer, der er tilgængelige andre steder fra din "
+"$PATH, er slået fra i zypper.conf."
 
 #. translators: helptext; %1% is a zypper command
 #: src/commands/subcommand.cc:485
@@ -5180,6 +5182,8 @@ msgid ""
 "Lists available subcommands. Using zypper subcommands found on your $PATH is "
 "disabled in zypper.conf."
 msgstr ""
+"Viser tilgængelige underkommandoer. Brug af zypper-underkommandoer, der "
+"findes i din $PATH, er slået fra i zypper.conf."
 
 #. Currently no concept how to handle global options and ZYPPlock
 #: src/commands/subcommand.cc:632
@@ -5474,7 +5478,7 @@ msgstr "Download alle kilde-RPM'er til denne mappe."
 #. translators: --delete/--no-delete
 #: src/commands/utils/source-download.cc:501
 msgid "Whether to delete extraneous source rpms in the local directory."
-msgstr ""
+msgstr "Hvorvidt overflødige kilde-RPM filer slettes i den lokale mappe."
 
 #. translators: --status
 #: src/commands/utils/source-download.cc:505
@@ -5488,7 +5492,7 @@ msgstr ""
 #. translators: command summary: targetos, tos
 #: src/commands/utils/system-architecture.cc:20
 msgid "Print the detected system architecture."
-msgstr ""
+msgstr "Udskriv den systemarkitektur, som er fundet."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/utils/targetos.cc:20
@@ -5505,22 +5509,29 @@ msgid ""
 "Shows the ID string of the target operating system. The string is defined by "
 "the XPath:/product/register/target entry in /etc/products.d/baseproduct."
 msgstr ""
+"Viser ID-strengen for målstyresystemet. Strengen er defineret ved XPath-"
+"indgangen /product/register/target i /etc/products.d/baseproduct."
 
 #: src/commands/utils/targetos.cc:25
 msgid ""
 "If the baseproduct does not provide this entry, or if no baseproduct is "
 "installed at all, the value is empty if the --terse global option is used."
 msgstr ""
+"Hvis baseproduct ikke indeholder denne post, eller hvis der slet ikke er "
+"installeret et baseproduct, er værdien tom, hvis det globale tilvalg --terse "
+"benyttes."
 
 #: src/commands/utils/targetos.cc:26
 msgid ""
 "In not-terse mode the distribution label is shown instead of an empty value, "
 "if a baseproduct is installed."
 msgstr ""
+"I ikke-terse-tilstand vises distributionsetiketten i stedet for en tom "
+"værdi, hvis et baseprodukt er installeret."
 
 #: src/commands/utils/targetos.cc:36
 msgid "Show the baseproducts distribution and short label instead."
-msgstr ""
+msgstr "Vis i stedet for baseresultatets distribution og korte etiket."
 
 #: src/commands/utils/targetos.cc:49
 msgid "XML output not implemented for this command."
@@ -5540,7 +5551,7 @@ msgstr "Kort etiket: %s"
 #: src/commands/utils/targetos.cc:71
 #, c-format, boost-format
 msgid "%s does not define %s."
-msgstr ""
+msgstr "%s definerer ikke %s."
 
 #. translators: command synopsis; do not translate lowercase words
 #: src/commands/utils/versioncmp.cc:19
@@ -5561,6 +5572,8 @@ msgid ""
 "The exit code is 0 if the versions are equal, 11 if VERSION1 is newer, and "
 "12 if VERSION2 is newer."
 msgstr ""
+"Returkoden er 0, hvis versionerne er ens, 11 hvis VERSION1 er nyere, og 12 "
+"hvis VERSION2 er nyere."
 
 #. translators: -m, --match
 #: src/commands/utils/versioncmp.cc:38
@@ -5644,17 +5657,19 @@ msgstr "Supportniveau"
 
 #: src/info.cc:426
 msgid "The successor package is already installed."
-msgstr ""
+msgstr "Den efterfølgende pakke er allerede installeret."
 
 #: src/info.cc:428
 msgid ""
 "The successor package should be installed as soon as possible to receive "
 "continued support."
 msgstr ""
+"Efterfølgerpakken bør installeres så hurtigt som muligt for fortsat at "
+"modtage support."
 
 #: src/info.cc:435
 msgid "Unfortunately the successor package is not provided by any repository."
-msgstr ""
+msgstr "Desværre er efterfølgerpakken ikke tilgængelig fra nogen kilde."
 
 #. translators: property name; short; used like "Name: value"
 #: src/info.cc:445
@@ -5682,7 +5697,7 @@ msgstr "ikke installeret"
 
 #: src/info.cc:462
 msgid "Upstream URL"
-msgstr ""
+msgstr "Upstream-URL"
 
 #. translators: property name; short; used like "Name: value"
 #. translator: Table column header.
@@ -5723,7 +5738,7 @@ msgstr "Foreslået"
 #. translators: A pattern has a 1:1 relation to a .rpm package defining it's properties AKA the pattern's Buddy.
 #: src/info.cc:697
 msgid "Buddy Package"
-msgstr ""
+msgstr "Tilhørende pakke"
 
 #. translators: property name; short; used like "Name: value"
 #: src/info.cc:701
@@ -5880,7 +5895,7 @@ msgstr "Prøver at afslutte med ynde..."
 #. translators: this will show up if you press ctrl+c twice
 #: src/main.cc:154
 msgid "Zypper is currently cleaning up, exiting as soon as possible."
-msgstr ""
+msgstr "Zypper er i gang med at rydde op, afslutter så snart som muligt."
 
 #. translators: the first %s is name of the resolvable,
 #. the second is its kind (e.g. 'zypper package')
@@ -6478,7 +6493,7 @@ msgstr "Resolvables fra '%s' er ikke indlæst pga. fejl."
 #: src/repos.cc:1829
 #, boost-format
 msgid "Repository '%1%' metadata expired since %2%."
-msgstr ""
+msgstr "Arkivets '%1%' metadata har været udløbet siden %2%."
 
 #. translators: the first %s is 'zypper refresh' and the second 'zypper clean -m'
 #: src/repos.cc:1841
@@ -6493,6 +6508,10 @@ msgid ""
 "not solve the issue, it could be that you are using a broken mirror or the "
 "server has actually discontinued to support the repository."
 msgstr ""
+"Arkivets metadata er udløbet: Kontroller, om 'autorefresh' er slået til "
+"(zypper lr), og genopfrisk ellers arkivet manuelt (zypper ref). Hvis dette "
+"ikke løser problemet, kan det skyldes, at du bruger et defekt spejl, eller "
+"at serveren reelt har indstillet supporten til arkivet."
 
 #: src/repos.cc:1859
 msgid "Reading installed packages..."
@@ -6635,7 +6654,7 @@ msgstr "Anvender løsningen %s"
 
 #: src/solve-commit.cc:247
 msgid "Resolver failed but reported no problems."
-msgstr ""
+msgstr "Løseren fejlede, men rapporterede ingen problemer."
 
 #. display the number of problems
 #: src/solve-commit.cc:259
@@ -6648,7 +6667,7 @@ msgstr[1] "%d problemer:"
 #. translator: The tag says that the preceding dependency problem is auto-resolved by applying the following solution
 #: src/solve-commit.cc:292
 msgid "Autoresolve:"
-msgstr ""
+msgstr "Automatisk løsning:"
 
 #: src/solve-commit.cc:321
 msgid "Resolving dependencies..."
@@ -6685,6 +6704,7 @@ msgid ""
 "Explicitly selecting DownloadAsNeeded also selects the classic_rpmtrans "
 "backend."
 msgstr ""
+"Eksplicit valg af DownloadAsNeeded vælger også classic_rpmtrans-backenden."
 
 #: src/solve-commit.cc:620
 #, c-format, boost-format
